@@ -1,0 +1,45 @@
+.holder {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  min-width: 200px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 2px solid;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.holder :nth-child(1) {
+  background-color: rgb(232, 84, 30);
+  order: 1;
+  width: 50%;
+}
+.holder :nth-child(2) {
+  background-color: rgb(24, 119, 235);
+  order: 4;
+  width: calc(100% / 3);
+}
+.holder :nth-child(3) {
+  background-color: rgb(219, 30, 232);
+  order: 3;
+  width: calc(100% / 3);
+}
+.holder :nth-child(4) {
+  background-color: rgb(50, 232, 30);
+  order: 5;
+  width: calc(100% / 3);
+}
+.holder :nth-child(5) {
+  background-color: rgb(232, 175, 30);
+  order: 2;
+  width: 50%;
+}
